@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+	<listeners>
+		<listener class-name="com.genericUtility.ListenerImplimentingClass"></listener>
+	</listeners>
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="com.healthcare.Medvista.Admin.AddDoctorTest"/>
+      <class name="com.healthcare.Medvista.Admin.AddDoctorSpecializationTest"/>
+      <class name="com.healthcare.Medvista.Doctor.UpdateDoctorProfileTest"/>
+      <class name ="com.healthcare.Medvista.Doctor.PatientEndToEndScenarioTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
